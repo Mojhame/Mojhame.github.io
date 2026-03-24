@@ -36,12 +36,10 @@ export const iconPaths = {
 	'instagram-logo': `<circle cx="128" cy="128" r="40" fill="none" stroke-miterlimit="10" stroke-width="16"/><rect width="184" height="184" x="36" y="36" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" rx="48"/><circle cx="180" cy="76" r="12" stroke="none" />`,
 	'tiktok-logo': `<path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="M168 106a96 96 0 0 0 56 18V84a56 56 0 0 1-56-56h-40v128a28 28 0 1 1-40-25V89a68 68 0 1 0 80 67Z"/>`,
 
-
-
-	database: `
-<ellipse cx="128" cy="80" rx="88" ry="48" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
-<path d="M40 80v96c0 26.5 39.4 48 88 48s88-21.5 88-48V80" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
-`,
-
+	'file-download': `<path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="M128 168V40m0 128-40-40m40 40 40-40M40 200h176"/>`,
+	'file': `<path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"d="M48 40h96l48 48v128a8 8 0 0 1-8 8H48a8 8 0 0 1-8-8V48a8 8 0 0 1 8-8Z"/><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"d="M144 40v48h48"/>`,
+	'api': `<path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"d="M88 40h80a8 8 0 0 1 8 8v160a8 8 0 0 1-8 8H88a8 8 0 0 1-8-8V48a8 8 0 0 1 8-8Z"/><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"d="M112 96h32m-32 32h32m-32 32h32"/>`,
+	'react': `<circle cx="128" cy="128" r="12" stroke="none"/><ellipse cx="128" cy="128" rx="80" ry="32" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><ellipse cx="128" cy="128" rx="80" ry="32" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" transform="rotate(60 128 128)"/><ellipse cx="128" cy="128" rx="80" ry="32" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" transform="rotate(120 128 128)"/>`,
+	'database': `<ellipse cx="128" cy="80" rx="88" ry="48" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M40 80v96c0 26.5 39.4 48 88 48s88-21.5 88-48V80" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M40 128c0 26.5 39.4 48 88 48s88-21.5 88-48" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>`,
 
 };
