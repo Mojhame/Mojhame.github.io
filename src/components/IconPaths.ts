@@ -42,4 +42,6 @@ export const iconPaths = {
 	'react': `<circle cx="128" cy="128" r="12" stroke="none"/><ellipse cx="128" cy="128" rx="80" ry="32" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><ellipse cx="128" cy="128" rx="80" ry="32" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" transform="rotate(60 128 128)"/><ellipse cx="128" cy="128" rx="80" ry="32" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" transform="rotate(120 128 128)"/>`,
 	'database': `<ellipse cx="128" cy="80" rx="88" ry="48" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M40 80v96c0 26.5 39.4 48 88 48s88-21.5 88-48V80" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M40 128c0 26.5 39.4 48 88 48s88-21.5 88-48" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>`,
 
+	copy: `<rect x="72" y="72" width="120" height="120" rx="8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><rect x="40" y="40" width="120" height="120" rx="8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>`,
+
 };

@@ -5,16 +5,16 @@ import ThemeToggle from './ThemeToggle.astro';
 
 /** Main menu items */
 const textLinks: { label: string; href: string }[] = [
-	{ label: 'Home', href: '/' },
-	{ label: 'Work', href: '/work/' },
-	{ label: 'About', href: '/about/' },
+	{ label: 'Inicio', href: '/' },
+	{ label: 'Proyectos', href: '/work/' },
+	{ label: 'Info', href: '/about/' },
 ];
 
 /** Icon links to social media — edit these with links to your profiles! */
 const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths; blank?: boolean; }[] = [
 	{ label: 'GitHub', href: 'https://github.com/Mojhame', icon: 'github-logo', blank: true },
 	{ label: 'LinkedIn', href: 'https://www.linkedin.com/in/dev-alejandro', icon: 'linkedin-logo', blank: true },
-	{ label: 'Download CV', href: '/assets/pdf/cv1.pdf', icon: 'file', blank: true },
+	{ label: 'Download CV', href: '/assets/pdf/cv.pdf', icon: 'file', blank: true },
 ];
 
 /** Test if a link is pointing to the current page. */

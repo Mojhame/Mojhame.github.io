@@ -2,20 +2,19 @@
 title: Grupo GRG
 publishDate: 2019-10-02 00:00:00
 img: /assets/grg.png
-img_alt: Interfaz moderna y responsiva del sitio web Gupo GRG
-description: |
-  Desarrollo de una página web estructurada utilizando HTML, SCSS y JavaScript, enfocada en organización, estilos y experiencia de usuario.
+img_alt: Interfaz moderna y responsiva del sitio web Grupo GRG
+description: Desarrollo frontend estructurado con HTML, SCSS y JavaScript.
 tags:
-  - Frontend
   - HTML
   - SCSS
   - JavaScript
+  - Frontend
 ---
 
-Desarrollé una página web para Grupo GRG como proyecto freelance, enfocándome en una estructura clara, organizada y mantenible.
+Desarrollo de sitio web para **Grupo GRG**, enfocado en una estructura clara, mantenible y una experiencia de usuario consistente.
 
-Trabajé principalmente con HTML, SCSS y JavaScript para construir una interfaz funcional y visualmente consistente. Implementé estilos personalizados utilizando SCSS, logrando una mejor organización del código y facilitando su escalabilidad.
+Se implementó una interfaz responsiva utilizando HTML, SCSS y JavaScript, aplicando buenas prácticas de maquetación, organización de estilos y componentes reutilizables.
 
-Asimismo, estructuré correctamente los componentes de la página y mejoré la experiencia de usuario mediante una navegación clara y un diseño responsive.
+**Impacto:** Mejora en la estructura del código, escalabilidad del proyecto y experiencia de navegación.
 
-Este proyecto me permitió reforzar mis habilidades en desarrollo frontend, buenas prácticas de maquetación y organización de estilos, asegurando un código limpio y mantenible.
+**Stack:** HTML, SCSS, JavaScript

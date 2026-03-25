@@ -1,49 +1,94 @@
 ---
 import CallToAction from './CallToAction.astro';
 import Icon from './Icon.astro';
+import Pill from "./Pill.astro";
 ---
 
-<aside>
-	<h2>¿Tienes un proyecto en mente?</h2>
-	<p>
-		Puedo ayudarte a desarrollar sistemas web, APIs o automatizar procesos para tu negocio.
-	</p>
-	<CallToAction href="mailto:zegarra.fa11@gmail.com">
-		Contáctame
-		<Icon icon="paper-plane-tilt" size="1.2em" />
-	</CallToAction>
+<aside class="bg-glass">
+    <h2>¿Tienes un proyecto en mente?</h2>
+    <p>
+        Puedo ayudarte a desarrollar sistemas web, APIs o automatizar procesos para tu negocio.
+    </p>
+
+    <div class="contact-box glass">
+        <div>
+            <span class="email">zegarra.fa11@gmail.com</span>
+            <button class="copy-btn" data-copy="zegarra.fa11@gmail.com" aria-label="Copiar email">
+                <Icon icon="copy" size="1.1em"/>
+            </button>
+        </div>
+
+        <a href="mailto:zegarra.fa11@gmail.com" class="send-btn">
+            Contáctame
+            <Icon icon="paper-plane-tilt" size="1.2em"/>
+        </a>
+    </div>
 </aside>
 
 <style>
-	aside {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 3rem;
-		border-top: 1px solid var(--gray-800);
-		border-bottom: 1px solid var(--gray-800);
-		padding: 5rem 1.5rem;
-		background-color: var(--gray-999_40);
-		box-shadow: var(--shadow-sm);
-	}
+    aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        border-top: 1px solid var(--gray-800);
+        border-bottom: 1px solid var(--gray-800);
+        padding: 5rem 1.5rem;
+        background-color: var(--gray-999_40);
+        box-shadow: var(--shadow-sm);
+    }
 
-	h2 {
-		font-size: var(--text-xl);
-		text-align: center;
-		max-width: 15ch;
-	}
+    h2 {
+        font-size: var(--text-xl);
+        text-align: center;
+        max-width: 15ch;
+    }
 
-	@media (min-width: 50em) {
-		aside {
-			padding: 7.5rem;
-			flex-direction: row;
-			flex-wrap: wrap;
-			justify-content: space-between;
-		}
+    @media (min-width: 50em) {
+        aside {
+            padding: 7.5rem;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
 
-		h2 {
-			font-size: var(--text-3xl);
-			text-align: left;
-		}
-	}
+        h2 {
+            font-size: var(--text-3xl);
+            text-align: left;
+        }
+    }
 </style>
+
+<script is:inline client:load>
+    const setupCopyButtons = () => {
+        document.querySelectorAll('.copy-btn').forEach(btn => {
+            if (btn.dataset.ready) return;
+            btn.dataset.ready = "true";
+
+            const originalIcon = btn.innerHTML;
+
+            btn.addEventListener('click', async () => {
+                try {
+                    await navigator.clipboard.writeText(btn.dataset.copy);
+
+                    btn.classList.add('copied');
+
+                    btn.innerHTML = `<svg viewBox="0 0 256 256" width="18" height="18">
+						<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"
+						d="M216 72 104 184l-56-56"/>
+					</svg>`;
+
+                    setTimeout(() => {
+                        btn.classList.remove('copied');
+                        btn.innerHTML = originalIcon;
+                    }, 1500);
+
+                } catch {
+                    console.error('Error al copiar');
+                }
+            });
+        });
+    };
+
+    setupCopyButtons();
+</script>

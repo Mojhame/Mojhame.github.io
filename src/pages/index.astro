@@ -43,7 +43,7 @@ const projects = (await getCollection('work'))
 					alt="Alejandro Zegarra - Full Stack Developer"
 					width="480"
 					height="620"
-					src="/assets/foto1.png"
+					src="/assets/backgrounds/22.png"
 				/>
 			</header>
 
@@ -81,26 +81,11 @@ const projects = (await getCollection('work'))
 				<header class="section-header stack gap-2 lg:gap-4">
 					<h3>Experiencia</h3>
 					<p>
-						He desarrollado sistemas web enfocados en automatizar procesos, gestionar datos y mejorar flujos de trabajo en entornos reales.
+						Desarrollador Full Stack con +2 años de experiencia construyendo
+						aplicaciones web que automatizan procesos y optimizan la gestión
+						de información en entornos empresariales.
 					</p>
 				</header>
-
-				<div class="gallery">
-					<Grid variant="small">
-						{
-							[
-								'Sistemas internos (gestión de alumnos y cursos)',
-								'Generación de certificados con QR',
-								'APIs REST con Laravel',
-								'Integración con SUNAT',
-							].map((brand) => (
-								<li class="mention-card">
-									<p>{brand}</p>
-								</li>
-							))
-						}
-					</Grid>
-				</div>
 			</section>
 		</main>
 
@@ -172,7 +157,7 @@ const projects = (await getCollection('work'))
 		top: 0;
 		transform: translateY(-75%) translateX(-50%);
 		background:
-			url('/assets/backgrounds/noise.png') top center/220px repeat,
+			url('/assets/backgrounds/noise1.png') top center/220px repeat,
 			var(--hero-bg) center center / var(--bg-gradient-size) no-repeat,
 			var(--gray-999);
 		background-blend-mode: overlay, normal, normal, normal;
