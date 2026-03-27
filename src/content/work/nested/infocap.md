@@ -1,7 +1,10 @@
 ---
 title: Infocap Perú
 publishDate: 2026-03-04 00:00:00
-img: /assets/infocap.png
+
+imgLight: /assets/infocap.png
+imgDark: /assets/infocap.png
+
 img_alt: Login del sistema de gestión académica de Infocap Perú
 description: Sistema web para gestión académica con roles, autenticación y validación mediante QR.
 tags:
@@ -23,4 +26,4 @@ Incluye autenticación con roles (administrador y alumno), panel administrativo 
 
 ## Enlaces
 
-- [Ver proyecto](https://www.infocapperu.com/)
+- [Ver proyecto](https://infocapperu.com/app/public/login)

@@ -1,7 +1,10 @@
 ---
 title: Grupo GRG
 publishDate: 2019-10-02 00:00:00
-img: /assets/grg.png
+
+imgLight: /assets/grg.png
+imgDark: /assets/grg.png
+
 img_alt: Interfaz moderna y responsiva del sitio web Grupo GRG
 description: Desarrollo frontend estructurado con HTML, SCSS y JavaScript.
 tags:

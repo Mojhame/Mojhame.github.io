@@ -1,7 +1,10 @@
 ---
 title: Toulouse Lautrec
 publishDate: 2019-12-01 00:00:00
-img: /assets/toulouse.png
+
+imgLight: /assets/11.png
+imgDark: /assets/12.png
+
 img_alt: Dashboard del sistema de gestión académica de Toulouse Lautrec
 description: Aplicación web académica con gestión de cursos, usuarios y mejora de interfaz.
 tags:

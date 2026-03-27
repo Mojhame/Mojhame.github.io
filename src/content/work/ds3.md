@@ -1,7 +1,10 @@
 ---
 title: DS3 Comunicaciones
 publishDate: 2020-03-02 00:00:00
-img: /assets/ds3.png
+
+imgLight: /assets/ds3.png
+imgDark: /assets/ds3.png
+
 img_alt: Interfaz moderna y responsiva del sitio web DS3 Comunicaciones
 description: Rediseño frontend enfocado en UI/UX, responsive design y optimización.
 tags:

@@ -10,7 +10,14 @@ const { data, id } = Astro.props.project;
 
 <a class="card" href={`/work/${id}`}>
 	<span class="title">{data.title}</span>
-	<img src={data.img} alt={data.img_alt || ''} loading="lazy" decoding="async" />
+	{data.imgLight && (
+		<>
+			<img src={data.imgLight} class="img-light" alt={data.img_alt || ''} loading="lazy" decoding="async" />
+			{data.imgDark && (
+				<img src={data.imgDark} class="img-dark" alt={data.img_alt || ''} loading="lazy" decoding="async" />
+			)}
+		</>
+	)}
 </a>
 
 <style>
@@ -60,5 +67,17 @@ const { data, id } = Astro.props.project;
 		.title {
 			border-radius: 0.9375rem;
 		}
+	}
+
+	.img-dark {
+		display: none;
+	}
+
+	:global(.theme-dark) .img-light {
+		display: none;
+	}
+
+	:global(.theme-dark) .img-dark {
+		display: block;
 	}
 </style>

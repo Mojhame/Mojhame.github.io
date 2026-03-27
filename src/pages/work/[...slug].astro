@@ -44,7 +44,23 @@ const { Content } = await render(entry);
 			</header>
 			<main class="wrapper">
 				<div class="stack gap-10 content">
-					{entry.data.img && <img src={entry.data.img} alt={entry.data.img_alt || ''} />}
+					{entry.data.imgLight && (
+						<>
+							<img
+								src={entry.data.imgLight}
+								class="img-light"
+								alt={entry.data.img_alt || ''}
+							/>
+
+							{entry.data.imgDark && (
+								<img
+									src={entry.data.imgDark}
+									class="img-dark"
+									alt={entry.data.img_alt || ''}
+								/>
+							)}
+						</>
+					)}
 					<div class="content">
 						<Content />
 					</div>
@@ -146,5 +162,17 @@ const { Content } = await render(entry);
 		.content :global(blockquote) {
 			font-size: var(--text-2xl);
 		}
+	}
+
+	.img-dark {
+		display: none;
+	}
+
+	:global(.theme-dark) .img-light {
+		display: none;
+	}
+
+	:global(.theme-dark) .img-dark {
+		display: block;
 	}
 </style>
